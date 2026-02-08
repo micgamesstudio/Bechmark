@@ -1,0 +1,10 @@
+//Installa Node.js + npm (versione stabile LTS)
+sudo apt update
+sudo apt install nodejs npm
+node -v
+
+//INSTALLAZIONE THREE
+npm install --save three
+npm uninstall three
+
+npm install stats.js
