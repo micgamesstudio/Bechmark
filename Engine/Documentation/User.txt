@@ -1,8 +1,0 @@
-MicEngineReturn.User.Object - GRUPPO UTENTE CHE SI MUOVE NELLO SPAZIO
-
-children[0] - UserObjects - GRUPPO CON GLI OGGETTI CHE SI MUOVONO CON L'UTENTE MA NON SONO IL MODELLO 3D
-children[0].children[0] - CameraGroup
-children[0].children[1] - DirectionObject
-children[0].children[2] - CockpitVisore
-
-children[1] - UserModel - GRUPPO CON GLI OGGETTI 3D DELL'UTENTE
