@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Neptune Engine</title>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="user-scalable=0, width=device-width, height=device-height, initial-scale=1.0">
+
+
+  <!-- ORIGINALE -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="
+  img-src 'self' data:; 
+  script-src * 'unsafe-inline' 'unsafe-eval'
+  "> -->
+
+  <!-- <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  img-src 'self' data:;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:;
+  style-src 'self' 'unsafe-inline';
+  worker-src blob:;
+  connect-src 'self' blob:;
+"> -->
+
+  <meta http-equiv="Content-Security-Policy" content="
+  img-src 'self' data:;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval' blob:;
+  style-src 'self' 'unsafe-inline';
+  worker-src blob:;
+  connect-src 'self' blob:;
+">
+
+  <style>
+    * {
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+    }
+
+    body {
+      margin: 0;
+      background-color: black;
+      overflow: hidden;
+      touch-action: none;
+    }
+
+    p {
+      display: inline-block;
+      margin: 0;
+    }
+  </style>
+
+  <!-- COMMENTARE PER L'APK -->
+  <!-- <script type="importmap">
+    {
+      "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "addons/": "./node_modules/three/examples/jsm/",
+            "yuka": "./Yuka/yuka.module.js",
+            "three-mesh-bvh": "./three-mesh-bvh/index.module.0.6.0.js"
+      }
+    }
+      </script> -->
+
+      <script type="importmap">
+    {
+      "imports": {
+            "three": "./Engine/Three182/three.module.js",
+            "addons/": "./Engine/Three182/jsm/",
+            "yuka": "./Yuka/yuka.module.js",
+            "three-mesh-bvh": "./three-mesh-bvh/index.module.0.6.0.js"
+      }
+    }
+      </script>
+
+  <!-- <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+        "addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/",
+        "yuka": "./Yuka/yuka.module.js",
+        "three-mesh-bvh": "./three-mesh-bvh/index.module.0.6.0.js"
+      }
+    }
+</script> -->
+
+</head>
+
+<body>
+  <div id="banner-container"></div>
+
+  <script src="/Engine/NippleJs/nipplejs.js"></script>
+  <script type="module" src="./Game.js"></script>
+</body>
+
+</html>
